@@ -22,7 +22,7 @@ export class App extends Component {
     const normalizeName = name.toLowerCase();
 
     if (ArrayNames.includes(normalizeName)) {
-      alert(`${name}вже є в книзі`);
+      alert(`${name} вже є в книзі`);
       return;
     }
     this.setState(({ contacts }) => {
