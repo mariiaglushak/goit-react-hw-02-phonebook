@@ -1,6 +1,6 @@
 import { InputField } from './InputStyle';
 
-const Input = ({ value, type, name, pattern, title, required, onChange }) => {
+const Input = ({ value, type, name, required, onChange }) => {
   return (
     <label>
       {name}
@@ -9,8 +9,6 @@ const Input = ({ value, type, name, pattern, title, required, onChange }) => {
         onChange={onChange}
         type={type}
         name={name}
-        pattern={pattern}
-        title={title}
         required={required}
       />
     </label>
@@ -18,4 +16,3 @@ const Input = ({ value, type, name, pattern, title, required, onChange }) => {
 };
 
 export default Input;
-
