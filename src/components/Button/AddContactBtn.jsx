@@ -1,5 +1,3 @@
-import PropTypes from 'prop-types';
-
 import { ContactBtn } from './AddContactStyle';
 
 const AddContactBtn = ({ text }) => {
@@ -7,7 +5,3 @@ const AddContactBtn = ({ text }) => {
 };
 
 export default AddContactBtn;
-
-AddContactBtn.propTypes = {
-  text: PropTypes.string.isRequired,
-};

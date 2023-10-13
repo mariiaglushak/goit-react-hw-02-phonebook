@@ -1,5 +1,3 @@
-import PropTypes from 'prop-types';
-
 import { Item, ItemNumber, ItemBtnDel } from './ContactListStyle';
 
 const ContactList = ({ contacts, text, onClick }) => {
@@ -19,8 +17,4 @@ const ContactList = ({ contacts, text, onClick }) => {
 
 export default ContactList;
 
-ContactList.propTypes = {
-  contacts: PropTypes.array.isRequired,
-  text: PropTypes.string.isRequired,
-  onClick: PropTypes.func.isRequired,
-};
+

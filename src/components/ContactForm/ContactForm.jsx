@@ -1,12 +1,10 @@
-import PropTypes from 'prop-types';
-
 import { Component } from 'react';
-import { FofmBasic } from './FormStyle';
+import { FofmBasic } from './ContactFormStyle';
 
 import Input from 'components/Input/Input';
 import AddContactBtn from 'components/Button/AddContactBtn';
 
-class Form extends Component {
+class ContactForm extends Component {
   state = {
     name: '',
     number: '',
@@ -54,8 +52,4 @@ class Form extends Component {
   }
 }
 
-export default Form;
-
-Form.propTypes = {
-  onSubmitHendler: PropTypes.func.isRequired,
-};
+export default ContactForm;

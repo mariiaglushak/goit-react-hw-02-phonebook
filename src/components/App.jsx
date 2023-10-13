@@ -1,7 +1,7 @@
 import { Component } from 'react';
 import { nanoid } from 'nanoid';
 
-import Form from './Form/Form';
+import ContactForm from './ContactForm/ContactForm';
 import ContactList from './ContactList/ContactList';
 import Filter from './Filter/Filter';
 
@@ -56,7 +56,7 @@ export class App extends Component {
     return (
       <>
         <h1>Phonebook</h1>
-        <Form onSubmitHendler={this.handlerFormSubmit}></Form>
+        <ContactForm onSubmitHendler={this.handlerFormSubmit}></ContactForm>
         <h2>Contacts</h2>
         <Filter
           text="Find contacts by name"
