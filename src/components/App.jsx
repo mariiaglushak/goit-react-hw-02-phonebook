@@ -13,8 +13,10 @@ export class App extends Component {
 
   handlerFormSubmit = ({ name, number }) => {
     const { contacts } = this.state;
-    const ArrayNames = contacts.map(contact => contact.name.toLowerCase());
     const normalizeName = name.toLowerCase();
+    const ArrayNames = contacts.find(
+      contact => contact.name.toLowerCase() === normalizeName
+    );
 
     if (ArrayNames.includes(normalizeName)) {
       alert(`${name} вже є в книзі`);
