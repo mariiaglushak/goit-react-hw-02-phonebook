@@ -18,10 +18,11 @@ export class App extends Component {
       contact => contact.name.toLowerCase() === normalizeName
     );
 
-    if (ArrayNames.includes(normalizeName)) {
+    if (ArrayNames) {
       alert(`${name} вже є в книзі`);
       return;
     }
+
     this.setState(({ contacts }) => {
       return {
         contacts: [{ id: nanoid(), name: name, number: number }, ...contacts],
